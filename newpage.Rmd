@@ -1,0 +1,32 @@
+### Headings and Paragraphs
+
+Headings are prefaces with hashes `#`. The largest, title heading gets one hash 
+and each subheading level adds another hash. 
+
+Paragraphs dont require any special marks, they are just automatically created 
+when you skip a line between blocks of text.
+
+
+I can link to [Google](http://google.com) or to [my own main page](index.html).
+
+Face Research Lab:
+
+* Permanent Staff
+    * Lisa
+    * Ben
+* Postdocs
+    * Iris
+    * Ant
+    * Kieran
+* PhD Students
+    * Danielle
+    * Chengyang 
+    * Vanessa
+    * Jaimie
+
+Things I need to do:
+
+1. Finish this lesson
+1. Write new R script for hormones project
+1. Write reference letter
+1. Check Moodle

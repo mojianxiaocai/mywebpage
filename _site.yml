@@ -3,10 +3,9 @@ author: "YOUR NAME"
 output_dir: "docs"  
 output:  
   html_document:  
-    self_contained: no  
     theme: cosmo
-    toc: TRUE
-    toc_depth: 2
+    css: styles.css
+
 
 
 navbar:  

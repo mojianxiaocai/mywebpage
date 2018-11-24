@@ -1,13 +1,9 @@
 ---
 title: "Chengjie Cai"
 date: "2018/11/5"
-
 ---
 
 I am a postgraduate student in the University of Strathclyde's
 [Department of Mathematics and Statistics](https://www.strath.ac.uk/science/mathematicsstatistics/).
 I work with [Jiazhu Pan](https://www.strath.ac.uk/staff/panjiazhudr/).
 
-This is [new page](newpage.html).
-
-This is [second page](paper.html).

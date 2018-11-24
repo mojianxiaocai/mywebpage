@@ -10,12 +10,12 @@ output:
 
 
 navbar:  
-  title: "My First Webpage"
+  title: "Chengjie Cai"
   left:
     - text: "Home"
       href: index.html
-    - text: "About"
-      href: about-me.html
     - text: "Paper"
       href: paper.html
+    - text: "About me"
+      href: about-me.html
       

@@ -1,0 +1,15 @@
+---
+title: "About me"
+output: html_document
+---
+
+<img src="image/cv-for-chengjie-cai.jpg" alt="My CV">
+
+
+
+### Some awards that have been won
+  * Third Prize of Shanghai High School Physics Competition
+  * 2008-2009 Merit Student in Shanghai
+  * Excellent League Member in Donghua University
+
+

@@ -11,5 +11,3 @@ I work with [Jiazhu Pan](https://www.strath.ac.uk/staff/panjiazhudr/).
 This is [new page](newpage.html).
 
 This is [second page](paper.html).
-
-haha

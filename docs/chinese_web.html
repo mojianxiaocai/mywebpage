@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+<meta name="author" content="蔡诚杰" />
+
+
+<title>谈谈我的体会</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Chengjie Cai</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Home</a>
+</li>
+<li>
+  <a href="paper.html">Paper</a>
+</li>
+<li>
+  <a href="about-me.html">About me</a>
+</li>
+<li>
+  <a href="chinese_web.html">chinese_web</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">谈谈我的体会</h1>
+<h4 class="author"><em>蔡诚杰</em></h4>
+
+</div>
+
+
+<p>各位同学，各位老师：</p>
+<p>大家早上好</p>
+<p>非常感谢卢主任给我这么一个机会，谈谈我在顾村中学的体会。</p>
+<p>顾村中学 可以说是改变了我命运的一个地方，提升我自己的地方，使我从一个农村小孩最后走向世界的地方。可以说，是各位顾村中学的老师造就了我，在面对这个世界之前，掌握了必备的技能。在我像大家这么大的时候，初中，高中，我也在怀疑我现在在学校里学的都有什么用，难道只是为了同学之间比分数的高低，受到老师父母的夸奖，同学的羡慕嘛？</p>
+<p>我从小学开始，英文就不好，为什么呢？小学看到数学书下面写了一行拼音，shuxue，以为是英文，一想原来英文我都会啊，单词什么的就偷懒不背了，等我回过头来发现英文和拼音不一样的时候，英文已经比别的同学差了一大截了。曾经英语考试是我最害怕的考试，有过考前通宵复习结果第二天考试的时候睡着的情况。之后发现中考是要考英语的，当时初中里最好的同学都能去很好的高中了，我因为英语拖后腿，感觉连普通高中的分数线都达不到。我很担心，就下定决心，找了英语老师补课，最后凭借英语的超常发挥，之后的事情大家就知道了，考上了顾村中学，接着考上了一所大学，现在准备去英国读博士了。</p>
+<p>其实我想说的是几点，第一点，无论同学你们现在的水平如何，全中国最好的两所学校你们都是有机会上的，因为你们还有机会可以努力，我是没办法了，已经过了高考这道坎了。第二点，出了国才发现英语是多么重要，不会英语就相当于哑巴和聋子，外加文盲。有的同学一定会想，那我不出国不就行了，其实现在中国和外国的贸易往来越来越多，外国人到中国来的比例也越来越多了，将来工作上碰到外国人的机会也会越来越多。第三点，课余时间要利用起来，多找老师补补课。 #以前我一直不理解为什么我一个很要好的朋友明明和我一起玩，但是成绩比我好那么多，后来有人告诉我，这个同学除了课余时间和我们玩的很开心，别的时候都在复习功课，而我别的时候又和别的人在玩#</p>
+<p>而谈到数学，我从小学开始，就很好，结果大学阴差阳错进了数学系。在我的读书生涯里，英语和数学都学得好的人在班级里一定是名列前茅的，因为英语数学拉分大。而我上了大学乃至接触到了社会，才发现，英语和数学都好的人，到了社会上，也很吃香。首先大家知道工科是比较好找工作的，而所有的理工科读到最后，都是在读数学。搞物理的，金融的，计算机的，电力等等，最后发现自己都在搞数学。同学们，有个很不幸的消息告诉大家，这里的大部分同学，尤其是希望自己变得优秀的同学，要做好一辈子和数学英语打交道的打算了。</p>
+<p>大家应该知道顾村中学有同学考到过北大的吧，。。。同学们，这里和大家分享一个秘密，也许顾村中学的老师也不知道。有一次我在新东方的宣传册里看到了我们这位同学，他的高考语文分数是135（满分150），我当时就震惊了，原来语文也是可以考那么高的。我想他能上北大，语文分数一定是他的杀手锏吧。</p>
+<p>其实我们这一批刚刚考完研的同学里，我发现一个很有趣的现象，有体育爱好的同学普遍考的比较好，有交大的，厦大的，再不济的也是考到本校的硕士，他们有的比较喜欢打篮球，踢足球，打羽毛球，乒乓球，而我比较喜欢长跑。</p>
+<p>我觉得是运动激发了他们学习的动力，开发了他们的头脑，当我们学的累了或者遇到难题做不下去的时候，有一项体育运动让你可以放松下来。既能锻炼身体，又能提高学习效率，姑且当一个秘方送给大家吧。</p>
+<p>说起记得最深的就是顾村中学举办的运动会，真的像是一个很大的节日，还有定期会举办艺术节，大家一起唱黄河大合唱，每个同学为班级的荣誉而战斗到最后一刻的感觉，真的是很棒啊。</p>
+<p>在顾村中学有太多美好的回忆，各位顾村中学的老师们，感谢你们孜孜不倦的教导，兢兢业业的备课，在今天这样一个日子里，我想说，老师，您辛苦了，教师节快乐。</p>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

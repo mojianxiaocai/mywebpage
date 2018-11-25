@@ -1,0 +1,69 @@
+---
+title: "今天开始用中文写文章"
+author:
+  - 蔡诚杰
+
+documentclass: ctexart
+output:
+  rticles::ctex:
+    fig_caption: yes
+    number_sections: yes
+    toc: yes
+classoption: "hyperref,"
+---
+
+# 写博客的动力
+![](image/glasgow university.jpg)
+格拉斯哥大学主楼
+
++ 可以将自己阅读的文章以及感受记录下来，权当是写日记吧
++ 找到旅行的意义，可以有地方post自己的照片和旅行感受(游记)
++ 有地方放自己喜爱的音乐和视频
++ 是对自己生活的一种诠释和积累吧
++ 随时随地我可以把我的想法记录下来，可以选择发布或者仅仅给自己提个醒
++ 相比较贴吧或者新浪博客，个人博客提供了沉浸式阅读体验，没有广告或者其他花哨的设计
+
+其实在数火车(a part time job)期间，思维不会被打断，可以写一部小说(中国版足球小将)或者论文构思也是极好的. 如果能像江南，不务正业(本职是生物)，写出此间的少年，找到了新的方向也是极好的
+
+留学国外，时间甚多，却从未找到旅行的意义
+
+
+# 观四重奏
+
+承认实力不够，没法实现梦想
+
+蟋蟀囤于梦想，而蚂蚁接受现实，
+
+不是说放弃梦想
+
+而是在现实生活中保留兴趣爱好
+
+是做蟋蟀还是蚂蚁，
+
+扬长避短，还是填补缺口，这是个问题！
+
+即便如此，也要肯定自己的存在！
+
+# 我只能赞许那些一边哭泣一边追求着的人
+
+[我只能赞许那些一边哭泣一边追求着的人](https://mp.weixin.qq.com/s/hBLoBU1_8xqjVmfv65qFLg)
+
+# 那些让我振奋的人
+
+[男儿当自强](https://www.youtube.com/watch?v=5_KbK1ixobI)
+
+[沧海一声笑](https://www.youtube.com/watch?v=iknGg9l4a7s)
+
+[一代鬼才：黄霑](http://book.ifeng.com/a/20150727/16541_0.shtml)
+
+[大张伟重唱金曲反被打脸，曾经不可一世的朋克，最后也没了脾气...](https://mp.weixin.qq.com/s/Dcvn61Jygk3vjjm4cyN-Pw)
+
+# 反唱西游
+
+[反唱西游](http://music.163.com/#/m/song?id=431551225)
+
+<blockquote><b>山高自有客行路，水深自有渡人船，辱者定碌碌，荣者自安安。</b></blockquote>
+
+[每个人心中都有一个美猴王](http://m.wufazhuce.com/music/1917)
+
+[与朋友们的私密聚会上，陈知演唱了《反唱西游》这首歌](https://3g.163.com/v/video/VCO6GG8RV.html)

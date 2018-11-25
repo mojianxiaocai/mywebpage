@@ -2,9 +2,15 @@ name: "mywebpage"
 author: "YOUR NAME"  
 output_dir: "docs"  
 output:  
-  html_document:  
+  html_document:
+    self_contained: no  
     theme: cosmo
-    css: styles.css
+    css: style.css
+    toc: yes
+    toc_depth: 3
+    toc_float: True
+    number_sections: yes
+
 
 
 
@@ -15,6 +21,10 @@ navbar:
       href: index.html
     - text: "Paper"
       href: paper.html
+    - text: "chinese_web"
+      href: chinese-index.html
+    - text: "Gossip"
+      href: Gossip.html
     - text: "About me"
       href: about-me.html
       

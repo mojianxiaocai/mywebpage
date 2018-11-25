@@ -1,6 +1,8 @@
 ---
 title: "About me"
-output: html_document
+output: 
+  html_document:
+      toc: FALSE
 ---
 
 <img src="image/cv-for-chengjie-cai.jpg" alt="My CV">

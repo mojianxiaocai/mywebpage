@@ -1,8 +1,5 @@
 ---
 title: "今天开始用中文写文章"
-author:
-  - 蔡诚杰
-
 documentclass: ctexart
 output:
   rticles::ctex:

@@ -25,4 +25,6 @@ navbar:
       href: Gossip.html
     - text: "About me"
       href: about-me.html
+    - text: "Blog"
+      href: blog_.html
       

@@ -1,0 +1,14 @@
+---
+title: "Teaching"
+output: 
+  html_document:
+      toc: FALSE
+---
+
+## Teaching Assistant, The University of Strathclyde(Since Oct. 2015)
+
+  * MM204: Probability And Statistical Inference,2016-2018.
+  * MM304: Inference And Regression Modelling, 2016/2017.
+  * MM307: Stochastics And Financial Econometrics, 2016-2019.
+  * MP420: Being a Pharmacist, 2016-2018.
+  * MM905: Financial Econometrics, 2015-2019.

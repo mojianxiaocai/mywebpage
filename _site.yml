@@ -9,7 +9,7 @@ output:
     toc: yes
     toc_depth: 3
     toc_float: True
-    number_sections: yes
+    number_sections: no
 
 
 
@@ -19,6 +19,10 @@ navbar:
   left:
     - text: "Home"
       href: index.html
+    - text: "Teaching"
+      href: Teaching.html
+    - text: "Professional Involvement"
+      href: Professional_Involvement.html      
     - text: "chinese_web"
       href: chinese-index.html
     - text: "Gossip"

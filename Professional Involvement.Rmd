@@ -1,0 +1,13 @@
+---
+title: "Professional Involvement"
+output: 
+  html_document:
+      toc: FALSE
+---
+
+# Conferences/Workshops
+
+* 42nd Young Statisticians Meeting, 17-19th Aug. 2016, London UK.
+* Workshop on Big Data, 13 Jan 2016, Glasgow UK.
+
+

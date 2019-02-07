@@ -1,0 +1,16 @@
+---
+title: "中文博客"
+output:
+  rticles::ctex:
+    fig_caption: yes
+    number_sections: yes
+    toc: yes
+---
+#2019
+* 2019-02-07 [使用R对PHQ-9问卷进行评分]("scoring-the-phq-9-questionnarie-using-r.html")
+
+#2018
+* 2018-12-05 [谈谈我的体会](chinese-web.html)
+* 2018-10-10 [今天开始用中文写文章](chinese-index.html)
+* 2018-07-26 [闲言碎语](Gossip.html)
+* 2018-04-26 [来写一篇博客吧](blog_.html)

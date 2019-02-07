@@ -23,12 +23,7 @@ navbar:
       href: Teaching.html
     - text: "Professional Involvement"
       href: Professional_Involvement.html      
-    - text: "chinese_web"
-      href: chinese-index.html
-    - text: "Gossip"
-      href: Gossip.html
+    - text: "Chinese_Blog"
+      href: Chinese_Blog.html
     - text: "About me"
       href: about-me.html
-    - text: "Blog"
-      href: blog_.html
-      

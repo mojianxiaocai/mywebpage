@@ -7,7 +7,7 @@ output:
     toc: yes
 ---
 #2019
-* 2019-02-07 [使用R对PHQ-9问卷进行评分]("scoring-the-phq-9-questionnarie-using-r.html")
+* 2019-02-07 [使用R对PHQ-9问卷进行评分](scoring-the-phq-9-questionnarie-using-r.html)
 
 #2018
 * 2018-12-05 [谈谈我的体会](chinese-web.html)

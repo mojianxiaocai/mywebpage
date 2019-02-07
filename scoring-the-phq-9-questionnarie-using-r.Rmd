@@ -1,0 +1,109 @@
+---
+title: "使用R对PHQ-9问卷进行评分"
+output:
+  rticles::ctex:
+    fig_caption: yes
+    number_sections: yes
+    toc: yes
+---
+转载自[这里](https://scriptsandstatistics.wordpress.com/2018/06/29/scoring-the-phq-9-questionnaire-using-r/)
+
+#介绍
+PHQ-9是患者健康问卷的九项抑郁症模块。每个项目以4点李克特量表评分，范围从0（根本不是）到3（几乎每天）。将这些项目相加以获得0到27的总分，分数越高表示抑郁症的严重程度越大。根据总分，可以用0-4,5-9,10-14,15-19和20-27点评估不同严重程度，表明“最小”，“轻度”，“中度”，“中度严重” “和”严重的“抑郁症。
+
+PHQ-9问卷可在以下[链接](https://patient.info/doctor/patient-health-questionnaire-phq-9)中找到。
+
+在这篇博文中，我展示了如何计算PHQ-9得分和PHQ-9严重等级。
+
+#包(Package)和数据(data)
+我们将要使用的数据集发布在[Plos One](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0156167#sec017)中。
+该文件具有数字对象标识符（doi），可以使用包的read_delim()功能导入到R中readr。
+
+```{r}
+library(readr)
+library(dplyr)
+library(ggplot2)
+ 
+df.phq9 <- readr::read_delim("https://doi.org/10.1371/journal.pone.0156167.s001", 
+                             delim = ";", 
+                             escape_double = FALSE, 
+                             trim_ws = TRUE) %>%
+            select(starts_with('phq9'))
+ 
+glimpse(df.phq9)
+```
+
+#The Scoring Function
+该scoring_phq9函数需要一个包含PHQ-9项（数据）的数据框和一个包含项'names（items.phq9）的向量作为输入参数。
+
+```{r}
+scoring_phq9 <- function(data, items.phq9) {
+  data %>%
+    mutate(nvalid.phq9 = rowSums(!is.na(select(., items.phq9))),
+           nvalid.phq9 = as.integer(nvalid.phq9),
+           mean.temp = rowSums(select(., items.phq9), na.rm = TRUE)/nvalid.phq9,
+           phq.01.temp = as.integer(unlist(data[items.phq9[1]])),
+           phq.02.temp = as.integer(unlist(data[items.phq9[2]])),
+           phq.03.temp = as.integer(unlist(data[items.phq9[3]])),
+           phq.04.temp = as.integer(unlist(data[items.phq9[4]])),
+           phq.05.temp = as.integer(unlist(data[items.phq9[5]])),
+           phq.06.temp = as.integer(unlist(data[items.phq9[6]])),
+           phq.07.temp = as.integer(unlist(data[items.phq9[7]])),
+           phq.08.temp = as.integer(unlist(data[items.phq9[8]])),
+           phq.09.temp = as.integer(unlist(data[items.phq9[9]]))) %>%
+    mutate_at(vars(phq.01.temp:phq.09.temp),
+              funs(ifelse(is.na(.), round(mean.temp), .))) %>%
+    mutate(score.temp = rowSums(select(., phq.01.temp:phq.09.temp), na.rm = TRUE),
+           score.phq9 = ifelse(nvalid.phq9 >= 7, as.integer(round(score.temp)), NA),
+           cutoff.phq9 = case_when(
+             score.phq9 >= 20 ~ 'severe',
+             score.phq9 >= 15 ~ 'moderately severe',
+             score.phq9 >= 10 ~ 'moderate',
+             score.phq9 >= 5 ~ 'mild',
+             score.phq9 < 5 ~ 'minimal'),
+             cutoff.phq9 = factor(cutoff.phq9, 
+                                  levels = c('minimal', 'mild','moderate', 'moderately severe', 'severe'))) %>%
+    select(-ends_with("temp"))
+ 
+}
+```
+
+
+#例子
+该函数将三个变量添加到原始数据框：
+
+* nvalid.phq9：具有有效值的变量数，
+* score.phq9：PHQ-9得分（0 - 27），
+* cutoff.phq9：PHQ-9严重水平（最小，轻度，中度，中度严重，严重）
+
+```{r}
+items.phq9 <- paste0('phq9_', seq(1, 9, 1))
+df.phq9 <- df.phq9 %>%
+  scoring_phq9(., items.phq9)
+glimpse(df.phq9)
+```
+
+#可视化
+
+##PHQ-9得分
+
+```{r}
+ggplot(df.phq9, aes(score.phq9)) +
+  geom_density(fill = 'blue', alpha = 0.2) +
+  scale_x_continuous(limits = c(0, 27), breaks = c(0,5,10,15,20,27)) +
+  labs(x = 'PHQ-9 Score', y = 'Density') +
+  theme_bw()
+
+```
+
+##PHQ-9严重等级
+```{r}
+ggplot(df.phq9, aes(x = cutoff.phq9, fill = cutoff.phq9)) +
+  geom_bar(colour = 'black') +
+  scale_fill_brewer(type = 'seq') +
+  labs(x = NULL, y = NULL, fill = NULL) +
+  theme_bw()
+
+```
+
+

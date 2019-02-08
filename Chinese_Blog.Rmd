@@ -7,6 +7,7 @@ output:
     toc: yes
 ---
 #2019
+* 2019-02-08 [理解时装周时装秀的正常人指南](a-normal-persons-guide-to-understanding-a-fashion-week-runway-show.html)(流利阅读系列)
 * 2019-02-07 [使用R对PHQ-9问卷进行评分](scoring-the-phq-9-questionnarie-using-r.html)
 
 #2018
@@ -14,3 +15,5 @@ output:
 * 2018-10-10 [今天开始用中文写文章](chinese-index.html)
 * 2018-07-26 [闲言碎语](Gossip.html)
 * 2018-04-26 [来写一篇博客吧](blog_.html)
+
+流利阅读系列源自于我定了每日流利阅读，每天半小时，有大神带着我精读英文外刊。我去找到了对应真实的外刊。因为文章还挺有意思的，所以用谷歌翻译把原文翻译成中文，以供自己收藏。准备把每天读的外文文章做成一个系列。

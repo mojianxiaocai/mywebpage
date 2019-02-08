@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title>理解时装周时装秀的正常人指南</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Chengjie Cai</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Home</a>
+</li>
+<li>
+  <a href="Teaching.html">Teaching</a>
+</li>
+<li>
+  <a href="Professional_Involvement.html">Professional Involvement</a>
+</li>
+<li>
+  <a href="Chinese_Blog.html">Chinese_Blog</a>
+</li>
+<li>
+  <a href="about-me.html">About me</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">理解时装周时装秀的正常人指南</h1>
+
+</div>
+
+
+<p>转载自<a href="https://www.washingtonpost.com/lifestyle/style/a-normal-persons-guide-to-understanding-a-fashion-week-runway-show/2018/02/06/582e4b94-008c-11e8-8acf-ad2991367d9d_story.html?noredirect=on&amp;utm_term=.51f3bfd0a096">华盛顿邮报</a></p>
+<p>在去年秋天最具活力的时装秀之一，Thom Browne结束了他的巴黎演讲，穿着白色的模特指导着一个巨大的独角兽木偶。两个舞者，像棉花糖一样填充，打开了节目，在宏伟的市政厅的木地板上掠过并旋转。在这两者之间，模特们穿着精致的服装岌岌可危地穿着精致的服装，一个人无法穿到邻里市场。</p>
+<p>什么是时尚的休闲消费者应该制造这样的景象？</p>
+<p>布朗不喜欢解释他的节目。他说，口译取决于旁观者。</p>
+<p>不久之前，唯一能够看到这种奇幻演示的人是时尚界内部人士和报道这个世界的记者。然而，现在几乎任何人都可以看到一些最戏剧性和深奥的时装秀。赞助商和慈善机构可以让拥有健康银行账户的人购买他们的节目。时装屋直播他们的演示文稿，记者在设计师鞠躬之前上传节目视频 - 或者你可以在Instagram上看到几乎整个系列。</p>
+<p>当跑道显示转向更具实验性的时候，它们可能像表现主义艺术或无调性音乐那样混杂。这是什么意思？有什么意义？没有人能提供相当于“音乐欣赏”的课程来帮助新人理解时尚吗？</p>
+<p>一些基本原则可以使体验更有价值 - 或者至少不那么恼火。</p>
+<p>随着2018年秋季时装秀在本周开始在纽约举行，有些人会用昂贵但看起来很熟悉的衣服进行简单的模特游行，提出一个简单的想法：这就是我将在下个季节出售的产品。</p>
+<p>大多数设计师需要进行投射和夸大，以便他们的信息能够到达便宜的座位 - 或者至少是过度饱和的观众。Tom Ford为自信，成熟的顾客销售魅力和性感魅力。但是在T台上，他调高了音量。乳头是可见的，西装外套穿在胸罩上，模特穿上衣但没有裤子。他强迫观察者问：这可以接受吗？这样体面吗？</p>
+<p>其他人有更复杂的愿望。Prabal Gurung说他希望将他的T台秀与更广泛的文化对话联系起来。亚历山大·王将他的演讲视为派对 - 强调他的衣服对街头凉爽，喜欢夜生活的态度。Tommy Hilfiger将跑道作为一个巨大的Instagram背景，为他2016年秋季系列组织了为期两天的狂欢节。Marc Jacobs制作了一个神秘的童话故事 - 有时带有挑逗性的音乐，或者最近带有沉默的配乐。</p>
+<p>但无论节目是直截了当还是前卫，他们都会给许多平民留下疑问：</p>
+<p>模特为什么不微笑？（因为它们具有个性，并且已被设计师指示为显得强壮，自信，坚韧，冷漠，冷漠，无论如何。）</p>
+<p>他们为什么走得这么快？（因为速度散发出能量和紧迫感。当一天有10个节目时，徘徊是令人讨厌的。）</p>
+<p>什么是奇怪的东西？（看着小黑裙会不会觉得无聊？）</p>
+<p>谁会穿那个？（很多人，也许不是你。）</p>
+<p>“新手应该简单地坐下来享受一场时装秀-不超过 -intellectualize，或下 -intellectualize它，”布朗说。“每个人都应该对他们在时装秀中所看到的内容有自己的看法。一个好的时装秀会引发某种情绪，某种感觉。一个好的时装秀你应该爱或恨。“</p>
+<p>糊状的中间是可以忘记的。冷静就是失败。</p>
+<p>自20世纪40年代以来，设计师们一直在纽约举办时装秀，当时公关人员埃莉诺·兰伯特（Eleanor Lambert）建立了时装周的初级版本。来自美国时装设计师协会的新书<a href="https://www.amazon.com/gp/product/B077SYZ5GQ?ie=UTF8&amp;tag=thewaspos09-20&amp;camp=1789&amp;linkCode=xm2&amp;creativeASIN=B077SYZ5GQ">“美国时装秀：75年的时尚和前排”</a>，颂扬了这一传统，注意到改变了T台的文化转变，以及展览如何运作的简单机制，从设置构造到模特的面部表情。</p>
+<p>它由Booth Moore撰写，他为“洛杉矶时报”和好莱坞报道报道了时尚界，回顾了十多年来无数的时装秀。尽管如此，她的研究让她惊讶于规划的数量和不可避免的混乱，这些都是这些作品的缩影。</p>
+<p>“就像在网上看起来光滑一样，这里有高中音乐元素，”摩尔说。</p>
+<p>即使是最主流的节目 - 例如Tory Burch或Michael Kors–也会在模特身上夸大头发和化妆，以创造一个更高的现实。“每张照片都是照片，”摩尔指出，如果只是为了纠正颜色或光线。</p>
+<p>对于那些决心讲述一个异想天开的故事或挑战流行智慧的设计师来说，观众必须暂停怀疑，就像一部沉溺于神奇现实主义的小说一样。</p>
+<p>“为什么一个独角兽在巴黎的跑道上 - 在历史的这个时刻？”她反问道。“你并不是要把一切都当作面子。”</p>
+<p>对于许多前卫的设计师来说，如Comme des Garcons的Rei Kawakubo，跑道甚至不是炫耀衣服。它致力于一项智力活动，“对收藏品的夸张隐喻，”时装技术学院博物馆馆长Valerie Steele说。例如，扮成女巫的模特可能是为了探索“女性的侵犯性方面”，她说。</p>
+<p>“一个更极端的节目的目的是给你一个想法，一种感觉，”斯蒂尔说。“衣服不是真正的语言，更像是音乐。”</p>
+<p><a href="https://www.washingtonpost.com/news/arts-and-entertainment/wp/2016/03/07/theres-a-very-good-reason-for-fashion-to-be-this-weird/?utm_term=.e0dbc5cf5d5f">有一个很好的理由让时尚变得如此奇怪</a></p>
+<p>摄影师玛丽亚华伦天奴（Maria Valentino）曾为本报及其他出版物拍摄过时装秀，警告说这些人感到困惑：“不一定要亲自接受！一个节目就像一篇文章，一个设计师在一个特定的时间段内用面料写在身体上的意见。“</p>
+<p>“很自然地看到一场时装秀，并试图把它置于自己的衣橱或品味的背景下，”她说。“但是当你保持开放的心态时，一个节目是多么令人愉快，这真是太棒了。”</p>
+<p>Kors曾经指出，在他的设计过程中，他总是问他的团队：女人在哪里？他说，答案不一定是办公室，餐馆或足球比赛。那个女人可能是蕾哈娜，她可能会走向中心舞台。时尚需要穿着，但它不一定实用。</p>
+<p>对于任何幸运地坐在时装秀观众席上的人来说，这场奇观可能令人陶醉。“作为现场体验的一部分确实有一些特别之处，”摩尔说。“这是到达，建设，灯光下降。。。。它有一个社区方面。就像你在百老汇演出一样：这与在家看电视不同。“</p>
+<p>最近发布了<a href="https://www.amazon.com/gp/product/B077T1RS4F?ie=UTF8&amp;tag=thewaspos09-20&amp;camp=1789&amp;linkCode=xm2&amp;creativeASIN=B077T1RS4F">一部</a>关于比利时设计师Dries Van Noten 的亲密纪录片的电影制作人Reiner Holzemer 在开始这个项目的工作时，是一个时装秀新手。“为了给时装秀和设计师的作品留下真实的印象，”Holzemer说，“透过你的眼睛，而不是通过你的手机，试图为你的Instagram拍摄好照片。”否则，你’我会怀念它的内心愉悦。</p>
+<p>然而，大多数人会将视频或静态摄影作为时装视频。如果可能的话，纽约设计师Liz Cabral建议在视频中观看一个系列。“找到最具沉浸感的360度插座或体验，”卡布拉尔说。“从正面的二维视角严格看待它们时，很多漂亮的衣服都会掉下来。”</p>
+<p>她补充说，“听完电影配乐，看着衣服移动，完全在那个时刻，这是真正被这些令人敬畏的15分钟演出所迷住的唯一方式。否则，它们只是衣服而非时刻。“</p>
+<p>T台印象是演变体的一部分，代表了文化的变化，我们思考性别和美的方式的变化。单个跑道图像位于特定时代的观众中; 其中一系列作为时间表。</p>
+<p>考虑到在20世纪80年代，模特就像亚马逊 - 高大而健美，有沙漏的数字。20世纪90年代迎来了流浪儿的时代，残酷的，但令人耳目一新的古怪，jolie laide。到了世纪之交，对对称骨骼结构的旧观念已经让位于展示种族多样性和性别模糊性的愿望。</p>
+<p>跑道上的夸张和震动演变成衣橱里的细微变化和变化。磨损的边缘和未完成的下摆曾经令人头晕目眩。不再。大肩垫来去匆匆，每次回来都会让人眼前一亮 - 直到突然，他们却没有。</p>
+<p>时装学院的斯蒂尔说，它有助于观察具有背景和历史感的跑道图像。“做研究以了解谁（设计师）是谁以及他们做了什么。否则，在某种程度上，这是毫无意义的。“</p>
+<p>并不是说你需要一个时尚史学位来理解Raf Simons。但它有助于了解他是比利时人，并且长期以来对视觉艺术和街头文化着迷 - 因此去年夏天“刀锋”推出了男装秀，将模特穿着大雨衣沿着潮湿昏暗的车道行驶。</p>
+<p>“如果没有研究，你就无法知道这个节目的内容，”斯蒂尔说。“它讲故事吗？这是老故事吗？“</p>
+<p>对于许多消费者来说，故事并不重要。那没关系。这对设计师来说也很好。简而言之，设计师想要移动观众，激发情感。他们希望让消费者看起来如此。最后，买他们的衣服。</p>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+---
+title: "波特兰附近的反疫苗接种“热点”官员宣布麻疹爆发的紧急情况"
+documentclass: ctexart
+output:
+  rticles::ctex:
+    fig_caption: yes
+    number_sections: yes
+    toc: yes
+classoption: "hyperref,"
+---
+转载自[华盛顿邮报](https://www.washingtonpost.com/nation/2019/01/23/an-anti-vaccination-hotspot-near-portland-suffers-public-health-emergency-over-measles/?utm_term=.3f0a57e023f4)
+
+俄勒冈州波特兰附近的麻疹爆发迅速升级，导致华盛顿州克拉克县附近的卫生官员宣布发生突发公共卫生事件，因为他们警告说，感染高度传染性病毒的人已经去过学校和教堂，牙医诊所，好市多，宜家和亚马逊储物柜取货站。
+
+该县公共卫生部门[建议](https://www.clark.wa.gov/public-health/measles-investigation-expands-21-confirmed-cases-new-exposure-sites-identified)，1月7日，麻疹患者在波特兰国际机场的D大厅。1月11日，一名受感染的人参加了波特兰开拓者队的主场比赛。
+
+在上周初，只有[少数确诊病例](https://www.clark.wa.gov/public-health/public-health-investigating-two-additional-confirmed-11-suspected-measles-cases)。星期五，[宣布紧急情况](https://www.clark.wa.gov/public-health/county-declares-public-health-emergency-due-measles-outbreak)的那天，有19个星期天，这个数字已增加到21个。[最新的更新](https://www.clark.wa.gov/public-health/measles-investigation)是在周二，当时县官员说他们已经确认了23起案件，并正在调查另外两起疑似病例。绝大多数生病的人都没有接种过疫苗。
+
+爆发使得儿科流行病学家担心，强制接种疫苗的运动城堡可能容易受到潜在致命疾病的迅速蔓延。
+
+“这令人担忧，”西雅图儿童医院的儿科医生Douglas J. Opel在接受华盛顿邮报采访时表示。“任何时候我们爆发一种疾病，我们都有安全有效的疫苗，它应该会引发一个危险信号。”
+
+州数据显示，克拉克县7.9％的儿童在2017-2018学年免于幼儿园入学所需的疫苗，其中包括疾病控制和预防中心[表示](https://www.cdc.gov/measles/vaccination.html)有效率为97％的麻疹双剂量疗程。只有1.2％的儿童有医疗保健，这意味着近7％的儿童因个人或宗教原因未接种疫苗。在全国范围内，大约2％的儿童因非医疗原因没有进行必要的免疫接种。
+
+根据儿科学教授，国家学院院长彼得·J·霍兹（Peter J. Hotez）的说法，疫苗的非医学豁免率很高，这使得位于克拉克县哥伦比亚河畔的波特兰地区成为爆发的“热点”。休斯顿贝勒医学院的热带医学。
+
+“这是我现在预测的一段时间，”他谈到克拉克县的突发公共卫生事件。“这真的非常糟糕，非常悲惨，完全可以预防。”
+
+在确诊病例中，18名患者年龄在1至10岁之间。20名感染者没有接种过麻疹疫苗，其他3人的疫苗接种史未经证实。一个人住院了。
+
+专家表示，疫情仍可能处于起步阶段。病毒的潜伏期[平均为两周](https://www.cdc.gov/vaccines/pubs/pinkbook/downloads/meas.pdf)，并且可以在皮疹明显发作前四天进行传播。
+
+Hotez说，由于麻疹是所有传染病中传染性最强的疾病之一，因此疫苗接种率低的区域必然会爆发麻疹。去年，[他在公共科学图书馆的一篇论](https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1002578)文中追踪了这一影响，将自2009年以来在允许他们的18个州中的12个州中攀升的哲学豁免数量与爆发增加联系起来。
+
+该论文发现，在十多个“热点大都市区”，包括西北地区的波特兰和西雅图，西南部的凤凰城以及中西部的底特律，这个问题尤为突出。
+
+公共卫生专家对拒绝自我免疫的人群的地理聚集[发出了警报](https://www.washingtonpost.com/outlook/2018/11/29/why-small-groups-vaccine-refusers-can-make-large-groups-people-sick/?utm_term=.e93915670e6f&tid=a_inl_manual)，尽管总体疫苗接种率很高，但仍然存在漏洞。去年11月，北卡罗来纳州阿什维尔是反疫苗接种运动的另一个据点，因为自20多年前感染疫苗成功以来，[该州最严重的水痘疫情已经崩溃](https://www.washingtonpost.com/nation/2018/11/19/anti-vaccination-stronghold-nc-hit-with-states-worst-chickenpox-outbreak-decades/?utm_term=.6ca56eb456a1&tid=a_inl_manual)。
+
+Hotez在接受“华盛顿邮报”采访时说：“波特兰在疫苗接种率方面完全是火车残骸。”
+
+反对在太平洋西北地区强制接种疫苗[可以追溯到进步时代](https://www.nbcnews.com/health/health-news/woman-dies-measles-first-us-death-12-years-n385946)，并且尽管取得了重大的医学突破，但[仍在继续](https://www.spectrumnews.org/news/anti-vaccine-movement-thrives-parts-united-states/)。现代反疫苗接种运动-建于1998年出版揭穿研究认为相关的麻疹，腮腺炎和风疹，被称为MMR疫苗疫苗，自闭症患者-不是排他性的政治分歧，一侧的[调查数据显示](https://www.oregonlive.com/opinion/index.ssf/2017/08/anti-vaccination_beliefs_dont.html)，它倾向于在两个极端情况下找到最热情的支持者。
+
+Hotez警告说，麻疹是接种疫苗的宽大代价，称这种疾病是“人类已知的最严重的传染病之一。”1980年根除天花后，麻疹成为全球儿童的主要杀手，他说。
+
+2000年，公共卫生官员[宣布在美国消灭麻疹](https://www.cdc.gov/measles/about/history.html)，因为在没有持续传播疾病的情况下已经过去了一年多。但Hotez说，最近爆发疫情提供了病毒控制危险倒退的证据，指责反疫苗接种运动。“这是一种自我伤害，”他说。
+
+2015年，华盛顿西北部的[一名妇女在感染麻疹后死于肺炎](https://www.nbcnews.com/health/health-news/woman-dies-measles-first-us-death-12-years-n385946)。这是美国自2003年以来首次死于该病毒。
+
+[根据疾病预防控制中心的数据](https://www.cdc.gov/measles/cases-outbreaks.html)，去年自2000年以来报告的麻疹病例数量位居第二。在26个州和哥伦比亚特区共确认了349例病例，仅超过了2014年的667例病例。正统的犹太社区去年在纽约和新泽西州爆发了多次疫情，其中未接种疫苗的旅行者返回来自以色列的病毒正在[与爆发作斗争](https://www.haaretz.com/israel-news/.premium-everything-you-need-to-know-about-the-measles-outbreak-roiling-israel-1.6631822)。前年，明尼苏达报道[75箱子麻疹的症状](https://www.washingtonpost.com/national/health-science/percentage-of-young-us-children-who-dont-receive-any-vaccines-has-quadrupled-since-2001/2018/10/11/4a9cca98-cd0d-11e8-920f-dd52e1ae4570_story.html?utm_term=.fa85608108a0)，多在索马里社会，他们的[名誉扫地理论](https://www.washingtonpost.com/news/speaking-of-science/wp/2017/01/10/the-facts-about-vaccines-autism-and-robert-f-kennedy-jr-s-conspiracy-theory/?utm_term=.47a12fa4ec9e)对MMR疫苗指责自闭症已经[站稳了脚跟](https://www.washingtonpost.com/national/health-science/anti-vaccine-activists-spark-a-states-worst-measles-outbreak-in-decades/2017/05/04/a1fac952-2f39-11e7-9dec-764dc781686f_story.html?utm_term=.243855bee30c)。
+
+欧宝表示，由于麻疹在世界各地仍然流行，“旅行者定期引入是导致此次频繁爆发的原因。”
+
+他补充说，需要高水平的保护来防止高度传染性病毒的转移。必须对92％至94％的人口进行免疫接种。克拉克县已经低于这个水平，他说，“在你考虑其他事情之前，比如人们只是错过了预约。”
+
+该县的卫生部门强调病毒可以传播的容易程度，在感染者所在的房间内长达两个小时。
+
+“如果其他人呼吸被污染的空气或接触污染的表面，然后触摸他们的眼睛，鼻子或嘴巴，他们就会被感染，”该县周二在[一份声明中警告](https://www.clark.wa.gov/public-health/measles-investigation)说。“麻疹是如此具有传染性，以至于如果一个人有麻疹，接近那个没有免疫力的人的90％也会被感染。”
+
+虽然这种疾病通常以感冒症状和皮疹开始，但医生强调，许多感染者患有其他并发症，包括肺炎，更严重的情况是脑部炎症，即脑炎甚至癫痫发作。
+
+“这不是一种良性疾病，”欧宝说。

@@ -7,6 +7,7 @@ output:
     toc: yes
 ---
 #2019
+* 2019-07-16 [acknowledge](acknowledge.html)
 * 2019-03-12 [观《都挺好》第21－22集有感](after_watching_doutinghao.html)
 * 2019-02-15 [波特兰附近的反疫苗接种“热点”官员宣布麻疹爆发的紧急情况
 ](an-anti-vaccination-hotspot-near-portland-suffers-public-health-emergency-over-measles.html)((流利阅读系列))

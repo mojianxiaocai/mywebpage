@@ -11,7 +11,7 @@
 
 
 
-<title>中文博客</title>
+<title>acknowledge</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -19,9 +19,6 @@
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
-<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
-<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
-<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
@@ -268,101 +265,6 @@ $(document).ready(function () {
 
 
 
-<script>
-$(document).ready(function ()  {
-
-    // move toc-ignore selectors from section div to header
-    $('div.section.toc-ignore')
-        .removeClass('toc-ignore')
-        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
-
-    // establish options
-    var options = {
-      selectors: "h1,h2,h3",
-      theme: "bootstrap3",
-      context: '.toc-content',
-      hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
-      },
-      ignoreSelector: ".toc-ignore",
-      scrollTo: 0
-    };
-    options.showAndHide = true;
-    options.smoothScroll = true;
-
-    // tocify
-    var toc = $("#TOC").tocify(options).data("toc-tocify");
-});
-</script>
-
-<style type="text/css">
-
-#TOC {
-  margin: 25px 0px 20px 0px;
-}
-@media (max-width: 768px) {
-#TOC {
-  position: relative;
-  width: 100%;
-}
-}
-
-
-.toc-content {
-  padding-left: 30px;
-  padding-right: 40px;
-}
-
-div.main-container {
-  max-width: 1200px;
-}
-
-div.tocify {
-  width: 20%;
-  max-width: 260px;
-  max-height: 85%;
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  div.tocify {
-    width: 25%;
-  }
-}
-
-@media (max-width: 767px) {
-  div.tocify {
-    width: 100%;
-    max-width: none;
-  }
-}
-
-.tocify ul, .tocify li {
-  line-height: 20px;
-}
-
-.tocify-subheader .tocify-item {
-  font-size: 0.90em;
-  padding-left: 25px;
-  text-indent: 0;
-}
-
-.tocify .list-group-item {
-  border-radius: 0px;
-}
-
-
-</style>
-
-<!-- setup 3col/9col grid for toc_float and main content  -->
-<div class="row-fluid">
-<div class="col-xs-12 col-sm-4 col-md-3">
-<div id="TOC" class="tocify">
-</div>
-</div>
-
-<div class="toc-content col-xs-12 col-sm-8 col-md-9">
-
-
 
 
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
@@ -404,37 +306,41 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">中文博客</h1>
+<h1 class="title toc-ignore">acknowledge</h1>
+<h4 class="date"><em>16/07/2019</em></h4>
 
 </div>
 
 
-<div id="section" class="section level1">
-<h1>2019</h1>
-<ul>
-<li>2019-07-16 <a href="acknowledge.html">acknowledge</a></li>
-<li>2019-03-12 <a href="after_watching_doutinghao.html">观《都挺好》第21－22集有感</a></li>
-<li>2019-02-15 <a href="an-anti-vaccination-hotspot-near-portland-suffers-public-health-emergency-over-measles.html">波特兰附近的反疫苗接种“热点”官员宣布麻疹爆发的紧急情况</a>((流利阅读系列))</li>
-<li>2019-02-08 <a href="a-normal-persons-guide-to-understanding-a-fashion-week-runway-show.html">理解时装周时装秀的正常人指南</a>(流利阅读系列)</li>
-<li>2019-02-07 <a href="scoring-the-phq-9-questionnarie-using-r.html">使用R对PHQ-9问卷进行评分</a>(R培训系列)</li>
-</ul>
-</div>
-<div id="section-1" class="section level1">
-<h1>2018</h1>
-<ul>
-<li>2018-12-05 <a href="chinese_web.html">谈谈我的体会</a></li>
-<li>2018-10-10 <a href="chinese-index.html">今天开始用中文写文章</a></li>
-<li>2018-07-26 <a href="Gossip.html">闲言碎语</a></li>
-<li>2018-04-26 <a href="blog_.html">来写一篇博客吧</a></li>
-</ul>
-<p>流利阅读系列源自于我定了每日流利阅读，每天半小时，有大神带着我精读英文外刊。我去找到了对应真实的外刊。因为文章还挺有意思的，所以用谷歌翻译把原文翻译成中文，以供自己收藏。准备把每天读的外文文章做成一个系列。</p>
-<p>R培训系列源自于我每周要交一位格大的学生R语言，索性把要教的内容放到网上，以供自己收藏。</p>
-</div>
+<pre><code>感谢朋克歌手大张伟，是他积极的人生观支撑着我走完这几年的博士之路。</code></pre>
+<p>Thanks to the Chinese punk singer Da Zhangwei, his positive outlook on life has supported me in the past few years.</p>
+<p>我头一回看个综艺都会哭</p>
+<pre><code>大张伟：我的朋友们问我说为什么老在工作，我说音乐对我来说不是工作，那是我一生的使命
+
+我希望我可以早日找到我一生的使命，做科研现在是我的一个可能。
+
+因为大张伟在做音乐的时候，并不是一帆风顺的。在他刚出道的时候，做他想做的音乐并不能养活自己，因此他只能顺应潮流，改变自己的风格。后来在中国做综艺比较火，他也在综艺界找到了位置，小有成就。可喜的是，他也没有放下音乐，相反，综艺的成功，促进他可以在音乐上做到他之前未曾想过的事。在天天向上十周年特辑里，民乐团的大师们改编了大张伟的歌曲，这是大张伟之前从未想到过的事情。 所以说，面对事情并没有向着自己期望的方向发展的时候，不要气馁，也不要拒绝改变，不要拧着，顺应时代的浪潮，同时保持自己的特点，不忘初心，向着太阳走，再不济，总能走到月亮的。
 
 
 
-</div>
-</div>
+我仿佛重新回到了我的初二，找到了我奋斗的意义。
+我给自己定下的，为中国获得诺贝尔经济学奖。
+我有些沮丧，我发现我不可能做到，主要有以下几点：
+A1。我数学实力不够，有太多实力强于我的前辈（但是我可以有自己的特色，差异化竞争，科研也是讲究差异化竞争的）做不到就忘了吧
+A2。其实中国之前已经有很多诺贝尔奖了，像文学奖（莫言），医学奖（屠呦呦），物理学奖（李振道，杨振宁），不过确实没有经济学奖。
+
+
+我现在做到的几点：
+B1。通过阅读文献，我发现,我已经进入了计量经济学领域，可我如何在里面找到自己的位置
+B2。通过博士训练，掌握怎么做研究
+
+
+目前就是要通过博士毕业，达到目标B2。
+面对日益困难的竞争，博士很难直接进入高校，拿到位置
+需要有海外的工作经历，时间也是一个很重要的考量。越快越好。想到的解决办法：1。国内博后 2。国外博后</code></pre>
+
+
+
 
 </div>
 
